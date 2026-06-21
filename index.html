@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Father's Day</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Lato:wght@300;400&family=Dancing+Script:wght@600&display=swap" rel="stylesheet" />
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+
+  <canvas id="particles"></canvas>
+
+  <!-- SLIDE 1 — Hero -->
+  <section id="slide-1" class="slide active">
+    <div class="slide1-bg"></div>
+    <div class="hero-content">
+      <p class="eyebrow">A message from the heart</p>
+      <h1 class="hero-title">
+        <span class="line-top">Happy</span>
+        <span class="line-script">Father's Day</span>
+      </h1>
+
+      <div class="family-emoji" aria-label="Father with son and daughter">
+        <span class="emoji-char daughter">👧</span>
+        <span class="emoji-char dad">👨</span>
+        <span class="emoji-char son">👦</span>
+      </div>
+
+      <p class="hero-sub">To the man who made everything possible.</p>
+      <button id="start-btn" class="start-btn" aria-label="Begin the message">
+        <span>Open My Message</span>
+        <svg class="btn-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </button>
+    </div>
+    <div class="float-shapes" aria-hidden="true">
+      <span class="shape s1">♥</span>
+      <span class="shape s2">✦</span>
+      <span class="shape s3">♥</span>
+      <span class="shape s4">✦</span>
+      <span class="shape s5">♥</span>
+    </div>
+  </section>
+
+  <!-- SLIDE 2 — The Message -->
+  <section id="slide-2" class="slide">
+    <div class="slide2-bg"></div>
+    <div class="message-content">
+
+      <p class="msg-eyebrow reveal">For my Dad —</p>
+
+      <div class="msg-block reveal delay-1">
+        <h2 class="msg-title">You were my<br/><em>first hero.</em></h2>
+      </div>
+
+      <div class="msg-body reveal delay-2">
+        <p>
+          Long before I understood the word strength, I saw it in your hands —
+          the ones that built, carried, fixed, and held. You taught me that love
+          isn't spoken so much as <em>shown</em>: in early mornings, in quiet
+          sacrifices, in the way you always stayed.
+        </p>
+        <p>
+          Every steady lesson, every patient moment, every time you believed in
+          me when I didn't — that's the foundation I stand on today.
+        </p>
+      </div>
+
+      <blockquote class="msg-quote reveal delay-3">
+        "A father carries pictures where his money used to be."
+      </blockquote>
+
+      <div class="msg-closing reveal delay-4">
+        <p class="closing-script">With all my love,</p>
+        <p class="closing-name">Your Child ♥</p>
+      </div>
+
+      <button id="replay-btn" class="replay-btn reveal delay-5" aria-label="Go back to beginning">
+        ↩ Replay
+      </button>
+    </div>
+
+    <div class="float-shapes" aria-hidden="true">
+      <span class="shape s1">★</span>
+      <span class="shape s2">♥</span>
+      <span class="shape s3">★</span>
+      <span class="shape s4">♥</span>
+      <span class="shape s5">★</span>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
